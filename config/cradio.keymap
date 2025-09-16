@@ -14,7 +14,7 @@
         hrm: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             require-prior-idle-ms = <100>;
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
@@ -24,7 +24,7 @@
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
             display-name = "Layer-Tap";
